@@ -2,29 +2,107 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Barista Café</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to our premium coffee shop in Sweden - Barista Coffe" />
+    <meta name="keywords" content="coffee, tea, barista, coffee beans, grind, fresh, brewed" />
+    <title>Signup for newsletter - Barista Café</title>
+    <link rel="icon" sizes="16x16" href="assets/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
     <header>
-        <h1>Barista Café</h1>
+        <a href="index.html">
+            <h1 id="logo">Barista Café</h1>
+        </a>
+        <input type="checkbox" id="nav-toggle" name="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">
+            <i class="fa-solid fa-bars"></i>
+        </label>
         <nav>
-            <a href="#">Home</a>
-            <a href="#">Newsletter</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="newsletter.html" class="active">Newsletter Sign Up</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
         </nav>
     </header>
-
     <main>
-        <p>Barista Café.</p>
+        <section id="newsletter">
+            <form id="newsletter-form" method="POST" action="https://formdump.codeinstitute.net">
+                <h2><i class="fa-solid fa-newspaper fa-bounce"></i> Signup To Our Newsletter Today! Get a free coffee for
+                    2!!!</h2>
+                <label for="first_name">First Name</label>
+                <input type="text" name="first_name" id="first_name" class="text-input" required>
+                <label for="last_name">Last Name</label>
+                <input type="text" name="last_name" id="last_name" class="text-input" required>
+                <label for="email_address">Email Address</label>
+                <input type="email" name="email_address" id="email_address" class="text-input" required>
+                <div class="center">
+                    <div>
+                        <label for="membership">Apply for membership</label>
+                        <input type="radio" name="Membership_selection" id="On_Site_Personal_Trainer"
+                            value="membership"><br><br>
+                        <input type="submit" value="Sign Up Now!" class="join-button">
+                    </div>
+                </div>
+                </div>
+            </form>
+        </section>
+        <section id="footer">
+            <div id="footer-box"></div>
+            <div>
+                <br />
+                <h3></h3>
+        </section>
     </main>
-
     <footer>
-        <p>&copy; 2023 Barista Café</p>
+        <br>
+        <div class="social-media-container">
+            <ul id="socialmedia">
+                <li>
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener"
+                        aria-label="Visit our Facebook page (opens in a new tab)">
+                        <i class="fa-brands fa-facebook fa-beat-fade"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/" target="_blank" rel="noopener"
+                        aria-label="Visit our Twitter page (opens in a new tab)">
+                        <i class="fa-brands fa-twitter fa-beat-fade"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener"
+                        aria-label="Visit our Instagram page (opens in a new tab)">
+                        <i class="fa-brands fa-instagram fa-beat-fade"></i>
+                    </a>
+                <li>
+                    <a href="https://www.youtube.com/" target="_blank" rel="noopener"
+                        aria-label="Visit our YouTube page (opens in a new tab)">
+                        <i class="fa-brands fa-youtube fa-beat-fade"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.tiktok.com/" target="_blank" rel="noopener"
+                        aria-label="Visit our TikTok page (opens in a new tab)">
+                        <i class="fa-brands fa-tiktok fa-beat-fade"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <br>
+            <p>&copy; 2023 - Barista Café - Premium Coffee - All rights reserved.</p><br>
+        </div>
     </footer>
+    <script src="https://kit.fontawesome.com/7dd2cb17e4.js" crossorigin="anonymous"></script>
 </body>
-
 </html>
